@@ -1,0 +1,24 @@
+﻿@model ProductsVM;
+@{
+}
+
+<div class="title">
+    <p>Products</p>
+    <button>Add+</button>
+</div>
+
+<div class="box-container">
+    @foreach (var product in Model.Products)
+    {
+        <div class="categories-box">
+            <div class="category-name">
+                <div class="img">
+                    <img src="" alt="shekil">
+                </div>
+                <p class="productName">Product Name: @product.Name</p>
+                <p class="productCategory">Product Category: @product.Category</p>
+                <p class="productPrice">Product Price: @product.Price</p>
+            </div>
+        </div>
+    }
+</div>
